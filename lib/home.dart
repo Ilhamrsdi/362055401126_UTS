@@ -338,7 +338,7 @@ class Promo extends StatelessWidget {
                       Colors.blue,
                     ]),
                     borderRadius: BorderRadius.circular(8.0),
-                    image: DecorationImage(image: AssetImage('images/promo.jpeg'))),
+                    image: DecorationImage(image: AssetImage('promo.jpeg'))),
                 margin: EdgeInsets.only(left: 10.0),
                 height: 150.0,
                 width: 200.0,
