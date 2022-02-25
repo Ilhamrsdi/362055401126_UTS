@@ -60,17 +60,17 @@ class Profile extends StatelessWidget {
         leading: Container(
           width: 50.0,
           height: 50.0,
-          decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(fit: BoxFit.fill, image: NetworkImage("https://source.unsplash.com/ZHvM3XIOHoE/"))),
+          decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(fit: BoxFit.fill, image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/2048px-User_font_awesome.svg.png"))),
         ),
         title: Text(
-          "Luthfi Azhari",
+          "User",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: Row(
           children: <Widget>[
             RaisedButton.icon(
               icon: Icon(Icons.album),
-              label: Text("0 Poin"),
+              label: Text("9000 Poin"),
               onPressed: () {},
               color: Colors.grey[200],
               elevation: 0.0,
@@ -80,7 +80,7 @@ class Profile extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
             ),
             RaisedButton(
-              child: Text("TravelokaPay"),
+              child: Text("Saldo"),
               onPressed: () {},
               color: Colors.grey[200],
               elevation: 0.0,
@@ -341,7 +341,7 @@ class Promo extends StatelessWidget {
                     image: DecorationImage(image: AssetImage('images/promo.jpeg'))),
                 margin: EdgeInsets.only(left: 10.0),
                 height: 150.0,
-                width: 300.0,
+                width: 200.0,
                 child: null,
               )
             ],
