@@ -88,11 +88,13 @@ class _PemesananState extends State<Pemesanan> {
                 width: 150,
                 child: RaisedButton(
                   child: Text(
-                    "Submit",
+                    "Cari",
                     style: TextStyle(color: Colors.white),
                   ),
                   color: Colors.blue,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/ListBandara');
+                  },
                 ),
               ),
             ],

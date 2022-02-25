@@ -1,30 +1,22 @@
 import 'package:flutter/material.dart';
 import 'akun.dart';
 import 'home.dart';
-import 'https://flutlab.io/root/app/lib/bandara.dart';
 import 'inbox.dart';
 import 'pemesanan.dart';
+import 'bandara.dart';
 
-void main(List<String> args) {
-  runApp(MyApp());
-}
+void main() => runApp(new MyApp());
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: <String, WidgetBuilder>{
-        '/Masuk': (context) => ListBandara(),
-      },
+      title: 'Project UTS',
+      theme: new ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: new MyHomePage(),
     );
   }
 }
@@ -40,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _layoutPage = [
     Home(),
     Pemesanan(),
-    Inbox(),
+    ListBandara(),
     Akun()
   ];
 
@@ -58,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(icon: Icon(Icons.view_agenda), title: Text('Pemesanan')),
-          BottomNavigationBarItem(icon: Icon(Icons.inbox), title: Text('Inbox')),
+          BottomNavigationBarItem(icon: Icon(Icons.flight_land), title: Text('List Bandara')),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), title: Text('Akun Saya')),
         ],
         type: BottomNavigationBarType.fixed,
