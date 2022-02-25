@@ -58,19 +58,19 @@ class Profile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: ListTile(
         leading: Container(
-          width: 20.0,
-          height: 20.0,
-          decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(fit: BoxFit.fill, image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/2048px-User_font_awesome.svg.png"))),
+          width: 50.0,
+          height: 50.0,
+          decoration: BoxDecoration(shape: BoxShape.circle, image: DecorationImage(fit: BoxFit.fill, image: NetworkImage("https://source.unsplash.com/ZHvM3XIOHoE/"))),
         ),
         title: Text(
-          "User",
+          "Luthfi Azhari",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: Row(
           children: <Widget>[
             RaisedButton.icon(
               icon: Icon(Icons.album),
-              label: Text("9000 Poin"),
+              label: Text("0 Poin"),
               onPressed: () {},
               color: Colors.grey[200],
               elevation: 0.0,
@@ -80,7 +80,7 @@ class Profile extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
             ),
             RaisedButton(
-              child: Text("Saldo"),
+              child: Text("TravelokaPay"),
               onPressed: () {},
               color: Colors.grey[200],
               elevation: 0.0,
@@ -207,7 +207,7 @@ class MenuTambahan extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 20.0),
-      height: 100.0,
+      height: 50.0,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: menuTambahan,
@@ -312,7 +312,7 @@ class Promo extends StatelessWidget {
                     Container(
                         decoration: BoxDecoration(color: Colors.red[300], borderRadius: BorderRadius.only(topLeft: Radius.elliptical(20.0, 20.0), bottomRight: Radius.elliptical(150.0, 150.0))),
                         child: Padding(
-                          padding: const EdgeInsets.only(top: 2.0, left: 5.0, right: 30.0, bottom: 30.0),
+                          padding: const EdgeInsets.only(top: 2.0, left: 5.0, right: 20.0, bottom: 20.0),
                           child: Text(
                             '%',
                             style: TextStyle(fontSize: 24.0, color: Colors.white),
@@ -338,10 +338,10 @@ class Promo extends StatelessWidget {
                       Colors.blue,
                     ]),
                     borderRadius: BorderRadius.circular(8.0),
-                    image: DecorationImage(image: AssetImage('promo.jpeg'))),
+                    image: DecorationImage(image: AssetImage('assets/promo.jpeg'))),
                 margin: EdgeInsets.only(left: 10.0),
                 height: 150.0,
-                width: 200.0,
+                width: 150.0,
                 child: null,
               )
             ],

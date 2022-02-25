@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'bandara.dart';
 
 class Pemesanan extends StatefulWidget {
   @override
@@ -85,15 +86,20 @@ class _PemesananState extends State<Pemesanan> {
                 height: 100,
               ),
               Container(
-                width: 150,
+                width: 500,
                 child: RaisedButton(
                   child: Text(
-                    "Cari",
+                    "Submit",
                     style: TextStyle(color: Colors.white),
                   ),
                   color: Colors.blue,
                   onPressed: () {
-                    Navigator.pushNamed(context, '/ListBandara');
+                    initialRoute:
+                    '/';
+                    routes:
+                    <String, WidgetBuilder>{
+                      '/Cari': (context) => ListBandara(),
+                    };
                   },
                 ),
               ),
