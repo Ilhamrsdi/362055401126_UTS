@@ -82,10 +82,10 @@ class _PemesananState extends State<Pemesanan> {
                 },
               ),
               SizedBox(
-                height: 200,
+                height: 100,
               ),
               Container(
-                width: 250,
+                width: 150,
                 child: RaisedButton(
                   child: Text(
                     "Submit",
