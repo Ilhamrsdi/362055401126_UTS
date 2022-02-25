@@ -1,20 +1,30 @@
 import 'package:flutter/material.dart';
 import 'akun.dart';
 import 'home.dart';
+import 'https://flutlab.io/root/app/lib/bandara.dart';
 import 'inbox.dart';
 import 'pemesanan.dart';
 
-void main() => runApp(new MyApp());
+void main(List<String> args) {
+  runApp(MyApp());
+}
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Project UTS',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new MyHomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: <String, WidgetBuilder>{
+        '/': (context) => ListBandara(),
+      },
     );
   }
 }
