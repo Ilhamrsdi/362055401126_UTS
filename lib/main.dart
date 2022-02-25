@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        '/': (context) => ListBandara(),
+        '/Masuk': (context) => ListBandara(),
       },
     );
   }
