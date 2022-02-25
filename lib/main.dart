@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'bandara.dart';
 import 'akun.dart';
 import 'home.dart';
-import 'inbox.dart';
 import 'pemesanan.dart';
 
 void main() => runApp(new MyApp());
@@ -31,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _layoutPage = [
     Home(),
     Pemesanan(),
-    ListBandara(),
+    Bandara(),
     Akun()
   ];
 

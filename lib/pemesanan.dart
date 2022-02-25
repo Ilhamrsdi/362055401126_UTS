@@ -89,7 +89,7 @@ class _PemesananState extends State<Pemesanan> {
                 width: 500,
                 child: RaisedButton(
                   child: Text(
-                    "Submit",
+                    "Cari",
                     style: TextStyle(color: Colors.white),
                   ),
                   color: Colors.blue,
@@ -98,7 +98,7 @@ class _PemesananState extends State<Pemesanan> {
                     '/';
                     routes:
                     <String, WidgetBuilder>{
-                      '/Cari': (context) => ListBandara(),
+                      '/Cari': (context) => Bandara(),
                     };
                   },
                 ),

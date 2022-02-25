@@ -9,7 +9,7 @@ class _AkunState extends State<Akun> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Akun'),
+      child: Text('NotFound -404-'),
     );
   }
 }
