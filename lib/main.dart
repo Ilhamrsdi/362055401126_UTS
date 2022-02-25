@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: <String, WidgetBuilder>{
+        '/': (context) => ListBandara(),
+      },
       title: 'Project UTS',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
